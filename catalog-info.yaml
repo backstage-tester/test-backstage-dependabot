@@ -2,18 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-backstage-dependabot
-  description: test 2
+  description: tyutyyu
   annotations:
     github.com/project-slug: backstage-tester/test-backstage-dependabot
     exposure: internal
-    pii: "true"
+    pii: "false"
     pci: "false"
-    phi: "true"
+    phi: "false"
     ai: "false"
-    bank-device: na
-    tier: "1"
+    bank-device: eu,na,aus
+    tier: "3"
 spec:
-  type: website
-  lifecycle: legacy
-  owner: group:default/security-platform
+  type: library
+  lifecycle: experimental
+  owner: group:default/team-gatemate
   system: system:default/examples
