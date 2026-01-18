@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-backstage-dependabot
+  description: workday
+  annotations:
+    github.com/project-slug: backstage-tester/test-backstage-dependabot
+    mycompany.com/exposure: internal
+    mycompany.com/pii: "false"
+    mycompany.com/pci: "false"
+    mycompany.com/phi: "false"
+    mycompany.com/ai: "true"
+    mycompany.com/bank-device: na
+    mycompany.com/tier: "2"
+  tags:
+    - {{ tag }}
+
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/identity-platform
+  system: system:default/identity
