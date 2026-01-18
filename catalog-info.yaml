@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-backstage-dependabot
+  title: backstage-tester/test-backstage-dependabot
+  description: ree
+  annotations:
+    github.com/project-slug: backstage-tester/test-backstage-dependabot
+    mycompany.com/exposure: internal
+    mycompany.com/pii: "false"
+    mycompany.com/pci: "true"
+    mycompany.com/phi: "false"
+    mycompany.com/ai: "true"
+    mycompany.com/bank-device: na,aus
+    mycompany.com/tier: "3"
+  tags:
+    - api
+    - java
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/cloud-security
