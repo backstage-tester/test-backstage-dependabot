@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-backstage-dependabot
+  description: test 1
+  annotations:
+    github.com/project-slug: backstage-tester/test-backstage-dependabot
+    exposure: internal
+    pii: "false"
+    pci: "true"
+    ai: "false"
+    bank-device: {{ values.bank_device | join(',') }}
+    tier: "2"
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/security-platform
+  system: system:default/cloud-security
