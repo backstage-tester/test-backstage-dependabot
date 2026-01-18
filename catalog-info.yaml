@@ -2,18 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-backstage-dependabot
-  description: workday
+  description: test 2
   annotations:
     github.com/project-slug: backstage-tester/test-backstage-dependabot
-    exposure: external
-    pii: "false"
+    exposure: internal
+    pii: "true"
     pci: "false"
-    phi: "false"
+    phi: "true"
     ai: "false"
-    bank-device: 
-    tier: "3"
+    bank-device: na
+    tier: "1"
 spec:
-  type: library
-  lifecycle: experimental
-  owner: group:default/guests
-  system: system:default/supra
+  type: website
+  lifecycle: legacy
+  owner: group:default/security-platform
+  system: system:default/examples
