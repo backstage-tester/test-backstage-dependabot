@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-backstage-dependabot
+  description: test
+  tags:
+    - {{ tag }}
+  annotations:
+    github.com/project-slug: backstage-tester/test-backstage-dependabot
+    mycompany.com/exposure: internal
+    mycompany.com/pii: "false"
+    mycompany.com/pci: "true"
+    mycompany.com/phi: "false"
+    mycompany.com/ai: "false"
+    mycompany.com/bank-device: eu,na
+    mycompany.com/tier: "2"
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/team-supra
+  system: system:default/identity
